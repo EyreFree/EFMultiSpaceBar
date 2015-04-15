@@ -24,7 +24,12 @@ class ViewController: UIViewController {
 
     //must override to set detail of the bar
     override func viewDidLayoutSubviews() {
-        testBar.setDetail("test title", backBGColor: UIColor(red: 211/255, green: 211/255, blue: 211/255, alpha: 1), frontBGColor: UIColor(red: 78/255, green: 152/255, blue: 220/255, alpha: 1), multi: 5, width: testBar.bounds.width, height: testBar.bounds.height)
+        testBar.setDetail("test title",
+                backBGColor: UIColor(red: 211/255, green: 211/255, blue: 211/255, alpha: 1),
+                frontBGColors: [UIColor(red: 220/255, green: 78/255, blue: 78/255, alpha: 1), UIColor(red: 78/255, green: 152/255, blue: 220/255, alpha: 1), UIColor(red: 66/255, green: 193/255, blue: 17/255, alpha: 1)],
+                multi: 5,
+                width: testBar.bounds.width,
+                height: testBar.bounds.height)
     }
     
     @IBAction func testAction(sender: AnyObject) {

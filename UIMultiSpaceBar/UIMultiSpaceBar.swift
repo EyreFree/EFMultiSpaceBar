@@ -17,7 +17,9 @@ class UIMultiSpaceBar:UIView
     @IBOutlet weak var frontView: UIView!
     @IBOutlet weak var leftLabel: UILabel!
     @IBOutlet weak var rightLabel: UILabel!
+
     var rightLayer:CATextLayer = CATextLayer()
+    var frontColors:NSArray!
     
     var perNow:CGFloat = CGFloat(0)
     
@@ -41,14 +43,15 @@ class UIMultiSpaceBar:UIView
     }
     
     //设置细节
-    func setDetail(title:String, backBGColor:UIColor, frontBGColor:UIColor, multi:CGFloat, width:CGFloat, height:CGFloat)
+    func setDetail(title:String, backBGColor:UIColor, frontBGColors:NSArray, multi:CGFloat, width:CGFloat, height:CGFloat)
     {
         //设置文字
         leftLabel.text = title
         
         //设置颜色
         backView.backgroundColor = backBGColor
-        frontView.backgroundColor = frontBGColor
+        frontColors = frontBGColors
+        frontView.backgroundColor = frontBGColors[0] as UIColor
         
         //设置大小
         containerView.frame = CGRectMake(0, 0, width, height)
@@ -84,7 +87,7 @@ class UIMultiSpaceBar:UIView
     func changeWidthAnimation(percentage:CGFloat)
     {
         var ori:CGRect = backView.frame
-        
+
         UIView.beginAnimations(nil, context:nil)
         UIView.setAnimationDuration(1)
         UIView.setAnimationDelegate(self)
@@ -95,14 +98,20 @@ class UIMultiSpaceBar:UIView
     //动画改变Label内容
     func changeLabelAnimation(percentage:CGFloat)
     {
+        //这是右上角的数字
         var keyAnima:CAKeyframeAnimation = CAKeyframeAnimation()
         keyAnima.keyPath = "string"
         keyAnima.values = NSMutableArray()
+        //这是会动的内容物
+        var keyAnimaColor:CAKeyframeAnimation = CAKeyframeAnimation()
+        keyAnimaColor.keyPath = "backgroundColor"
+        keyAnimaColor.values = NSMutableArray()
+
         if((percentage - perNow) > 0)
         {
             for(; perNow < percentage; 0)
             {
-                ++perNow
+                keyAnimaColor.values.append(changePerNow(++perNow).CGColor)
                 keyAnima.values.append(NSString(format:"%.0lf", Double(perNow)))
             }
         }
@@ -110,16 +119,25 @@ class UIMultiSpaceBar:UIView
         {
             for(; perNow > percentage; 0)
             {
-                --perNow
+                keyAnimaColor.values.append(changePerNow(--perNow).CGColor)
                 keyAnima.values.append(NSString(format:"%.0lf", Double(perNow)))
             }
         }
+
+        //这是右上角的数字
         keyAnima.duration = 1.0
         keyAnima.delegate = self
         keyAnima.removedOnCompletion = false
         keyAnima.fillMode = kCAFillModeForwards
         rightLayer.addAnimation(keyAnima, forKey: "rightLayer")
         rightLayer.string = NSString(format:"%.0lf", Double(percentage))
+        //这是会动的内容物
+        keyAnimaColor.duration = 1.0
+        keyAnimaColor.delegate = self
+        keyAnimaColor.removedOnCompletion = false
+        keyAnimaColor.fillMode = kCAFillModeForwards
+        frontView.layer.addAnimation(keyAnimaColor, forKey: "frontView")
+        frontView.layer.backgroundColor = changePerNow(percentage).CGColor
     }
     
     //剪切
@@ -150,5 +168,18 @@ class UIMultiSpaceBar:UIView
         view.layer.masksToBounds = true
         view.layer.cornerRadius = 3.0
         view.layer.borderWidth = 0.0
+    }
+
+    func changePerNow(newPercentage:CGFloat)->UIColor
+    {
+        if(newPercentage < 60)
+        {
+            return frontColors[0] as UIColor
+        }
+        else if(newPercentage >= 85)
+        {
+            return frontColors[2] as UIColor
+        }
+        return frontColors[1] as UIColor
     }
 }
