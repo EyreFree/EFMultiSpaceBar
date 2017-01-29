@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		125559DE1E3E0DD000303F34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125559DD1E3E0DD000303F34 /* AppDelegate.swift */; };
+		125559E01E3E0DD000303F34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125559DF1E3E0DD000303F34 /* ViewController.swift */; };
+		125559E31E3E0DD000303F34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125559E11E3E0DD000303F34 /* Main.storyboard */; };
+		125559E51E3E0DD000303F34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125559E41E3E0DD000303F34 /* Assets.xcassets */; };
+		125559E81E3E0DD000303F34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125559E61E3E0DD000303F34 /* LaunchScreen.storyboard */; };
+		125559F11E3E0E1500303F34 /* EFMultiSpaceBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 125559F01E3E0E1500303F34 /* EFMultiSpaceBar.xib */; };
+		125559F31E3E0E2500303F34 /* EFMultiSpaceBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125559F21E3E0E2500303F34 /* EFMultiSpaceBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		125559DA1E3E0DD000303F34 /* EFMultiSpaceBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFMultiSpaceBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		125559DD1E3E0DD000303F34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		125559DF1E3E0DD000303F34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		125559E21E3E0DD000303F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		125559E41E3E0DD000303F34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		125559E71E3E0DD000303F34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		125559E91E3E0DD000303F34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125559F01E3E0E1500303F34 /* EFMultiSpaceBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EFMultiSpaceBar.xib; sourceTree = "<group>"; };
+		125559F21E3E0E2500303F34 /* EFMultiSpaceBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EFMultiSpaceBar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		125559D71E3E0DD000303F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		125559D11E3E0DD000303F34 = {
+			isa = PBXGroup;
+			children = (
+				125559DC1E3E0DD000303F34 /* EFMultiSpaceBar */,
+				125559DB1E3E0DD000303F34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		125559DB1E3E0DD000303F34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				125559DA1E3E0DD000303F34 /* EFMultiSpaceBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		125559DC1E3E0DD000303F34 /* EFMultiSpaceBar */ = {
+			isa = PBXGroup;
+			children = (
+				125559EF1E3E0DF300303F34 /* EFMultiSpaceBar */,
+				125559DD1E3E0DD000303F34 /* AppDelegate.swift */,
+				125559DF1E3E0DD000303F34 /* ViewController.swift */,
+				125559E11E3E0DD000303F34 /* Main.storyboard */,
+				125559E41E3E0DD000303F34 /* Assets.xcassets */,
+				125559E61E3E0DD000303F34 /* LaunchScreen.storyboard */,
+				125559E91E3E0DD000303F34 /* Info.plist */,
+			);
+			path = EFMultiSpaceBar;
+			sourceTree = "<group>";
+		};
+		125559EF1E3E0DF300303F34 /* EFMultiSpaceBar */ = {
+			isa = PBXGroup;
+			children = (
+				125559F21E3E0E2500303F34 /* EFMultiSpaceBar.swift */,
+				125559F01E3E0E1500303F34 /* EFMultiSpaceBar.xib */,
+			);
+			name = EFMultiSpaceBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		125559D91E3E0DD000303F34 /* EFMultiSpaceBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 125559EC1E3E0DD000303F34 /* Build configuration list for PBXNativeTarget "EFMultiSpaceBar" */;
+			buildPhases = (
+				125559D61E3E0DD000303F34 /* Sources */,
+				125559D71E3E0DD000303F34 /* Frameworks */,
+				125559D81E3E0DD000303F34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EFMultiSpaceBar;
+			productName = EFMultiSpaceBar;
+			productReference = 125559DA1E3E0DD000303F34 /* EFMultiSpaceBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		125559D21E3E0DD000303F34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = EyreFree;
+				TargetAttributes = {
+					125559D91E3E0DD000303F34 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = P3X2725LYY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 125559D51E3E0DD000303F34 /* Build configuration list for PBXProject "EFMultiSpaceBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 125559D11E3E0DD000303F34;
+			productRefGroup = 125559DB1E3E0DD000303F34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				125559D91E3E0DD000303F34 /* EFMultiSpaceBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		125559D81E3E0DD000303F34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125559E81E3E0DD000303F34 /* LaunchScreen.storyboard in Resources */,
+				125559E51E3E0DD000303F34 /* Assets.xcassets in Resources */,
+				125559F11E3E0E1500303F34 /* EFMultiSpaceBar.xib in Resources */,
+				125559E31E3E0DD000303F34 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		125559D61E3E0DD000303F34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				125559E01E3E0DD000303F34 /* ViewController.swift in Sources */,
+				125559F31E3E0E2500303F34 /* EFMultiSpaceBar.swift in Sources */,
+				125559DE1E3E0DD000303F34 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		125559E11E3E0DD000303F34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				125559E21E3E0DD000303F34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		125559E61E3E0DD000303F34 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				125559E71E3E0DD000303F34 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		125559EA1E3E0DD000303F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		125559EB1E3E0DD000303F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		125559ED1E3E0DD000303F34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P3X2725LYY;
+				INFOPLIST_FILE = EFMultiSpaceBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EyreFree.EFMultiSpaceBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		125559EE1E3E0DD000303F34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P3X2725LYY;
+				INFOPLIST_FILE = EFMultiSpaceBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.EyreFree.EFMultiSpaceBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		125559D51E3E0DD000303F34 /* Build configuration list for PBXProject "EFMultiSpaceBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125559EA1E3E0DD000303F34 /* Debug */,
+				125559EB1E3E0DD000303F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		125559EC1E3E0DD000303F34 /* Build configuration list for PBXNativeTarget "EFMultiSpaceBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125559ED1E3E0DD000303F34 /* Debug */,
+				125559EE1E3E0DD000303F34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 125559D21E3E0DD000303F34 /* Project object */;
+}

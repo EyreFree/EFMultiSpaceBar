@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ei8-2N-Q4S">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ypQ-Ca-yAJ">
+            <objects>
+                <viewController id="Ei8-2N-Q4S" customClass="ViewController" customModule="EFMultiSpaceBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="quh-TT-liZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="PVa-jz-Eet"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bx7-G5-osa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5L-g7-Z16" customClass="EFMultiSpaceBar" customModule="EFMultiSpaceBar" customModuleProvider="target">
+                                <rect key="frame" x="10" y="420" width="355" height="36"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="bll-zh-FJT"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-ou-XFe">
+                                <rect key="frame" x="10" y="260" width="111.5" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="wZt-3P-ycq"/>
+                                </constraints>
+                                <state key="normal" title="to 0">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="testAction:" destination="Ei8-2N-Q4S" eventType="touchUpInside" id="LZW-s2-9sZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGi-xS-x8u">
+                                <rect key="frame" x="131.5" y="260" width="112" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="q2W-PG-BTT"/>
+                                </constraints>
+                                <state key="normal" title="to 60">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="testAction_2:" destination="Ei8-2N-Q4S" eventType="touchUpInside" id="arS-zf-f9Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjX-8h-NPd">
+                                <rect key="frame" x="253.5" y="260" width="111.5" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="3NM-9l-e29"/>
+                                </constraints>
+                                <state key="normal" title="to 100">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="testAction_3:" destination="Ei8-2N-Q4S" eventType="touchUpInside" id="GO5-h5-I2s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o5L-g7-Z16" firstAttribute="top" secondItem="bx7-G5-osa" secondAttribute="top" constant="420" id="313-bA-xcu"/>
+                            <constraint firstItem="kjX-8h-NPd" firstAttribute="leading" secondItem="WGi-xS-x8u" secondAttribute="trailing" constant="10" id="7fr-bI-aCT"/>
+                            <constraint firstAttribute="trailing" secondItem="kjX-8h-NPd" secondAttribute="trailing" constant="10" id="8xZ-ks-Bec"/>
+                            <constraint firstItem="o5L-g7-Z16" firstAttribute="leading" secondItem="bx7-G5-osa" secondAttribute="leading" constant="10" id="BNM-Zf-b2z"/>
+                            <constraint firstItem="kjX-8h-NPd" firstAttribute="top" secondItem="bx7-G5-osa" secondAttribute="top" constant="260" id="G8W-MJ-7ZT"/>
+                            <constraint firstItem="WGi-xS-x8u" firstAttribute="leading" secondItem="Spa-ou-XFe" secondAttribute="trailing" constant="10" id="IeX-Zd-WgC"/>
+                            <constraint firstItem="WGi-xS-x8u" firstAttribute="width" secondItem="Spa-ou-XFe" secondAttribute="width" id="RV0-ac-SDb"/>
+                            <constraint firstItem="Spa-ou-XFe" firstAttribute="leading" secondItem="bx7-G5-osa" secondAttribute="leading" constant="10" id="Txv-Us-iQX"/>
+                            <constraint firstItem="Spa-ou-XFe" firstAttribute="top" secondItem="bx7-G5-osa" secondAttribute="top" constant="260" id="UaH-Px-Mko"/>
+                            <constraint firstItem="WGi-xS-x8u" firstAttribute="top" secondItem="bx7-G5-osa" secondAttribute="top" constant="260" id="clg-qu-beR"/>
+                            <constraint firstItem="kjX-8h-NPd" firstAttribute="width" secondItem="Spa-ou-XFe" secondAttribute="width" id="gTy-bd-Upa"/>
+                            <constraint firstAttribute="trailing" secondItem="o5L-g7-Z16" secondAttribute="trailing" constant="10" id="nKW-0y-nQr"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="o5L-g7-Z16"/>
+                                <exclude reference="Spa-ou-XFe"/>
+                                <exclude reference="WGi-xS-x8u"/>
+                                <exclude reference="kjX-8h-NPd"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="o5L-g7-Z16"/>
+                                <include reference="Spa-ou-XFe"/>
+                                <include reference="WGi-xS-x8u"/>
+                                <include reference="kjX-8h-NPd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="testBar" destination="o5L-g7-Z16" id="7Rk-27-hfA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VWe-Cj-mhX" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
