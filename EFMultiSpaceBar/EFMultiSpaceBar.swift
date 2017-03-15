@@ -145,7 +145,7 @@ class EFMultiSpaceBar: UIView {
             let margin = 2 as CGFloat
 
             //拆分
-            let step: CGFloat = view.frame.width / number
+            let step: CGFloat = self.frame.width / number
             let height: CGFloat = view.frame.height
 
             //遮罩
