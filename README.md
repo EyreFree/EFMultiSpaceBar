@@ -1,6 +1,6 @@
-# UIMultiSpaceBar
+# EFMultiSpaceBar
 
-UIMultiSpaceBar, Swift, Animations:A bar which is made up of multi parts and it can change progress view and text by way of Animation.
+EFMultiSpaceBar, Swift, Animations:A bar which is made up of multi parts and it can change progress view and text by way of Animation.
 
 ## Overview
 
@@ -17,4 +17,4 @@ EyreFree, eyrefree@eyrefree.org
 
 ## License
 
-UIMultiSpaceBar is available under the MIT license. See the LICENSE file for more info.
+EFMultiSpaceBar is available under the MIT license. See the LICENSE file for more info.
